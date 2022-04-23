@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
     -- vsnip-plugin, VSCode snippets
     use 'hrsh7th/cmp-vsnip'
     use 'hrsh7th/vim-vsnip'
+    use 'hrsh7th/vim-vsnip-integ'
     
     -- Set of preconfigured snippets
     use "rafamadriz/friendly-snippets"
