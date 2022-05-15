@@ -17,7 +17,10 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     -- Tokyonight colorscheme
-    use 'folke/tokyonight.nvim'
+    --use 'folke/tokyonight.nvim'
+    
+    -- Material color scheme
+    use 'marko-cerovac/material.nvim'
 
     -- Lsp server configuration
     use {
@@ -46,7 +49,7 @@ return require('packer').startup(function(use)
         run = ':TSUpdate'
     }
     
-    -- nvim-tree, usefull tree file viewer
+    --nvim-tree, usefull tree file viewer
     use {
         'kyazdani42/nvim-tree.lua',
         requires = {
@@ -54,7 +57,18 @@ return require('packer').startup(function(use)
         }
     }
 
-
+    --use "preservim/nerdtree"
+    
+    -- nvim fuzzy finder
+    use {
+        'nvim-telescope/telescope.nvim',
+        requires = {'nvim-lua/plenary.nvim'} 
+    }
+    --use {
+      --  'romgrk/barbar.nvim',
+        --requires = {'kyazdani42/nvim-web-devicons'}
+    --}
+    use 'nvim-lualine/lualine.nvim'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

@@ -5,7 +5,8 @@ lua require('lsp')
 lua require ('completion')
 lua require ('treesitter')
 lua require ('tree')
-
+lua require ('globals')
+lua require ('statusbar')
 
 " Calls PackerInstall and PackerCompile each time a new plugin is intalled
 augroup packer_user_config
@@ -15,11 +16,9 @@ augroup end
 
 " Set tabs at 4 spaces
 filetype plugin indent on
-set tabstop=4
-set shiftwidth=4
-set expandtab
 
-set completeopt=menu,menuone,noselect
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 
 " Friendly-snippets plugin
 let g:vsnip_filetypes = {}

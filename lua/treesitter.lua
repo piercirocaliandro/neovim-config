@@ -3,7 +3,7 @@
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all". Each parser will be automatically installed if it is not found
   -- Great for the first clone
-  ensure_installed = { "c", "python", "cpp"},
+  ensure_installed = { "c", "python", "cpp", "latex"},
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,

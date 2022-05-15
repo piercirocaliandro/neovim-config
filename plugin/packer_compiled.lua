@@ -99,6 +99,16 @@ _G.packer_plugins = {
     path = "/home/pierciro/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/pierciro/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["material.nvim"] = {
+    loaded = true,
+    path = "/home/pierciro/.local/share/nvim/site/pack/packer/start/material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/pierciro/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -134,10 +144,15 @@ _G.packer_plugins = {
     path = "/home/pierciro/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  ["tokyonight.nvim"] = {
+  ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/pierciro/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
+    path = "/home/pierciro/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/pierciro/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-vsnip"] = {
     loaded = true,
